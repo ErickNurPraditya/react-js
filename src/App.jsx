@@ -1,11 +1,9 @@
-import ToDoList from "./components/ToDoList.jsx";
-
-
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
+import AnimeApi from "./components/AnimeAPI.jsx";
 
 function App() {
-  
-
-  return (<ToDoList/>);
+  return <AnimeApi />;
 }
 
 export default App;
