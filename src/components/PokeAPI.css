@@ -1,0 +1,248 @@
+/* Gaya Umum */
+body {
+  background-color: #101dc9;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: bold;
+  color: #2e3440;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Layout Title dan Search Bar */
+.title-searchbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+#pokemonSearch {
+  width: 300px;
+  border-radius: 8px;
+  border: 2px solid #4c566a;
+  padding: 10px;
+}
+
+/* Tombol Search */
+button[type="submit"] {
+  background-color: #81a1c1;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #5e81ac;
+  transform: translateY(-2px);
+}
+
+/* Layout Pokémon Card dan Detail */
+.pokemon-container {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+/* Kartu Pokémon */
+.pokemon-card {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-card .card-body {
+  display: flex;
+  align-items: center;
+}
+
+.pokemon-number {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e3440;
+  margin-right: 10px;
+}
+
+.pokemon-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.pokemon-info {
+  flex: 1;
+}
+
+.pokemon-title {
+  font-size: 20px;
+  color: #434c5e;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+/* Detail Pokémon */
+.pokemon-details {
+  flex: 2;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}
+
+.pokemon-details img {
+  display: block;
+  margin: 0 auto 20px;
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.pokemon-details p {
+  font-size: 16px;
+  color: #4c566a;
+  margin-bottom: 10px;
+}
+
+/* Evolution Section */
+.pokemon-evolution {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pokemon-evolution h5 {
+  font-weight: bold;
+  color: #2e3440;
+  margin-bottom: 10px;
+}
+
+.pokemon-evolution p {
+  font-size: 18px;
+  color: #3b4252;
+}
+
+/* Stats Section */
+.pokemon-stats p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #4c566a;
+}
+
+.progress {
+  height: 16px;
+  border-radius: 8px;
+}
+
+.progress-bar {
+  background-color: #81a1c1;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.pagination .page-item {
+  flex: 1;
+}
+
+.pagination .page-link {
+  display: block;
+  text-align: center;
+  color: #4c566a;
+  background-color: #d8dee9;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination .page-link:hover {
+  background-color: #5e81ac;
+  color: white;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #81a1c1;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title-searchbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #pokemonSearch {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .pokemon-container {
+    flex-direction: column;
+  }
+
+  .pokemon-card {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .pokemon-details {
+    margin-left: 0;
+  }
+
+  .pokemon-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .pokemon-title {
+    font-size: 18px;
+  }
+
+  .pokemon-details img {
+    width: 140px;
+    height: 140px;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+
+  .pagination .page-link {
+    padding: 8px 12px;
+  }
+
+  .pagination {
+    gap: 5px;
+  }
+}
