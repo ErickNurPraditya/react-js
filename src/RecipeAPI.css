@@ -1,0 +1,344 @@
+/* General Styles */
+body {
+  background-color: rgb(230 230 230);
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  color: #ff9933;
+  font-weight: bold;
+}
+
+h4 {
+  color: #333;
+  font-weight: bold;
+}
+
+.custom-input {
+  border: 2px solid #4a90e2;
+  border-radius: 0.25rem;
+}
+
+.custom-button {
+  background-color: #ff9800;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #fb8c00;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.header-title {
+  font-size: 2rem;
+  color: #c28428;
+}
+.search-group {
+  position: relative; /* Atur posisi relatif untuk grup pencarian */
+ 
+}
+
+.search-input {
+  height: 54px;
+  width: 60%; /* Lebar input 100% */
+  margin-left: 20%;
+}
+
+.search-button {
+  position: absolute; /* Atur tombol agar posisinya di dalam input */
+  right: 21%; /* Tempatkan di sebelah kanan */
+  top: 50%; /* Posisikan di tengah secara vertikal */
+  transform: translateY(-50%); /* Untuk rata tengah secara vertikal */
+  
+}
+
+
+/* Random Recipes Section */
+.random-recipes {
+  text-align: center;
+}
+
+.random-recipes .recipe-card {
+  margin: 0 auto;
+}
+
+/* Category Section */
+.category-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  height: 150px;
+  background-color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px #00000033;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4A4A4A;
+  margin-bottom: 1rem;
+}
+
+/* Recipe Card */
+.recipe-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Recipe List Item */
+.recipe-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.recipe-list-item:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-info {
+  flex: 1;
+  padding-right: 10px;
+}
+
+.recipe-image {
+  width: 100px;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Modal Styles */
+.modal-body img {
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+.modal-header, .modal-footer {
+  border: none;
+}
+
+.modal-title {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Error message */
+.text-danger {
+  font-size: 1.2rem;
+  color: #ff4444;
+}
+
+/* Additional for consistency */
+.container {
+  max-width: 100%;
+  padding: 0;
+}
+
+.mt-5, .mb-5 {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.mb-3, .mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+}
+
+.navbar-brand {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #ff9933;
+  margin-left: 10px;
+}
+
+.navbar-brand:hover{
+  color: #ff8f1f;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #333;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #ff9933;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+/* Button Styles */
+.share-button {
+  background-color: #ff9933; /* Warna biru lembut */
+  color: white; /* Warna teks */
+  border: none; /* Hilangkan border default */
+  padding: 10px 20px; /* Padding untuk kenyamanan klik */
+  font-size: 16px; /* Ukuran font */
+  font-family: 'Poppins', sans-serif; /* Gunakan font 'Poppins' */
+  border-radius: 8px; /* Membuat pojok button melengkung */
+  cursor: pointer; /* Tunjukkan bahwa button bisa diklik */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Animasi transisi */
+  margin-right: 10px;
+}
+
+.share-button:hover {
+  background-color: #d17f2c; /* Warna saat hover (lebih gelap) */
+  transform: scale(1.05); /* Efek sedikit membesar saat di-hover */
+}
+
+.share-button:active {
+  background-color: #d17f2c; /* Warna saat button diklik */
+  transform: scale(0.98); /* Efek menekan saat diklik */
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .navbar-nav .nav-link {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .search-form {
+    flex-direction: column;
+  }
+
+  .search-form .custom-input,
+  .search-form .custom-button {
+    width: 100%;
+  }
+}
+
+/* Styling Modal */
+.modal-content {
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.modal-header {
+  background-color: #f8f9fa;
+  border-bottom: none;
+}
+
+.modal-body h5 {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.modal-body ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.modal-body p {
+  text-align: justify;
+}
+
+/* Styling untuk tombol Share Recipe */
+.btn-primary {
+  background-color: #ff9933;
+  border: none;
+  
+}
+
+.btn-primary:hover {
+  background-color: #fc8916;
+  border: none;
+
+}
+
+/* Styling umum */
+h4, h5, .modal-title, .navbar-brand {
+  font-family: 'Poppins', sans-serif;
+}

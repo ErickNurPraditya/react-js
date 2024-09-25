@@ -1,0 +1,56 @@
+/* Footer.css */
+.footer {
+    background-color: rgb(255 255 255); /* Ganti dengan warna yang sesuai dengan tema */
+    color: #4A4A4A;
+    padding-top: 100px;
+    text-align: center;
+    
+  }
+  
+  .footer-content {
+    margin-bottom: 10px;
+  }
+  
+  .footer-content h2 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-content p {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .social-icons {
+    margin: 15px 0;
+  }
+  
+  .social-icons a {
+    color: #4A4A4A;
+    margin: 0 10px;
+    font-size: 24px; /* Ukuran ikon */
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #ff9933; /* Ganti dengan warna hover */
+  }
+  
+  .footer-bottom {
+    font-size: 14px;
+    opacity: 0.7;
+    align-items: center;
+  
+  }
+
+  .footer-bottom img {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    
+   
+    
+    
+  }
+
+ 
+  
