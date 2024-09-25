@@ -1,6 +1,7 @@
 // Footer.jsx
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
+// eslint-disable-next-line no-unused-vars
 import { FaInstagram, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 import './Footer.css'; // Import CSS untuk styling footer
 
